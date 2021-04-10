@@ -4,7 +4,7 @@
     <section v-if="arrLista && arrLista.length == 0">
       <p>Lista de tareas</p>
     </section>
-    <section>
+    <section v-else>
       <ul>
         <li v-for="nuevaTareaLista in arrLista" :key="nuevaTareaLista">
           {{ nuevaTareaLista.tarea }}
